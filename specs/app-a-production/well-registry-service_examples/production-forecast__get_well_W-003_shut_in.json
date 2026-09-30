@@ -1,0 +1,22 @@
+{
+  "http-request": {
+    "method": "GET",
+    "path": "/wells/W-003"
+  },
+  "http-response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "id": "W-003",
+      "name": "Permian-7",
+      "field": "Permian Basin",
+      "status": "SHUT_IN",
+      "latitude": 31.9,
+      "longitude": -102.1,
+      "spudDate": "2015-02-20",
+      "dailyCapacityBbl": 0
+    }
+  }
+}

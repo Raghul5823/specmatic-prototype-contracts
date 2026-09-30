@@ -1,0 +1,17 @@
+{
+  "http-request": {
+    "method": "GET",
+    "path": "/change-requests",
+    "query": {
+      "wellId": "W-002",
+      "status": "APPROVED"
+    }
+  },
+  "http-response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": []
+  }
+}

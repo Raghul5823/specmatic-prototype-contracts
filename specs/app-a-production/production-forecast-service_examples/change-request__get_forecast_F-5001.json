@@ -1,0 +1,25 @@
+{
+  "http-request": {
+    "method": "GET",
+    "path": "/forecasts/F-5001"
+  },
+  "http-response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "id": "F-5001",
+      "wellId": "W-001",
+      "wellName": "Eagle-1",
+      "horizonMonths": 3,
+      "declineRatePct": 5,
+      "baseDailyCapacityBbl": 1200,
+      "effectiveDailyCapacityBbl": 1350,
+      "appliedChangeRequestIds": ["CR-1001"],
+      "monthlyVolumesBbl": [40500, 38475, 36551.3],
+      "totalVolumeBbl": 115526.3,
+      "createdAt": "2026-09-02T09:00:00Z"
+    }
+  }
+}

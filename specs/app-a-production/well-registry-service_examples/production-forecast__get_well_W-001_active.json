@@ -1,0 +1,22 @@
+{
+  "http-request": {
+    "method": "GET",
+    "path": "/wells/W-001"
+  },
+  "http-response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "id": "W-001",
+      "name": "Eagle-1",
+      "field": "Eagle Ford",
+      "status": "ACTIVE",
+      "latitude": 28.5,
+      "longitude": -98.3,
+      "spudDate": "2019-04-12",
+      "dailyCapacityBbl": 1200
+    }
+  }
+}

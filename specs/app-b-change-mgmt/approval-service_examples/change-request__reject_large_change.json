@@ -1,0 +1,28 @@
+{
+  "http-request": {
+    "method": "POST",
+    "path": "/approvals",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": {
+      "changeRequestId": "CR-1004",
+      "type": "WORKOVER",
+      "capacityDeltaBbl": 900
+    }
+  },
+  "http-response": {
+    "status": 201,
+    "headers": {
+      "Content-Type": "application/json",
+      "Location": "/v2/approvals/A-7004"
+    },
+    "body": {
+      "id": "A-7004",
+      "changeRequestId": "CR-1004",
+      "decision": "REJECTED",
+      "reason": "Exceeds delegated authority (> 500 bbl/d); needs manual review.",
+      "decidedAt": "2026-09-28T09:00:00Z"
+    }
+  }
+}

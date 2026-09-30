@@ -1,0 +1,30 @@
+{
+  "http-request": {
+    "method": "GET",
+    "path": "/change-requests",
+    "query": {
+      "wellId": "W-001",
+      "status": "APPROVED"
+    }
+  },
+  "http-response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": [
+      {
+        "id": "CR-1001",
+        "title": "Open choke on Eagle-1",
+        "wellId": "W-001",
+        "type": "CHOKE_CHANGE",
+        "capacityDeltaBbl": 150,
+        "requestedBy": "j.doe",
+        "status": "APPROVED",
+        "approvalId": "A-7001",
+        "decisionReason": "Within delegated authority (<= 500 bbl/d).",
+        "createdAt": "2026-09-01T08:00:00Z"
+      }
+    ]
+  }
+}
