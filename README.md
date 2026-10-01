@@ -41,6 +41,16 @@ consumers.yaml                               who relies on which endpoint/fields
 ## Change rules
 - A spec change goes through a pull request and must pass the backward-compatibility check
   against the previous tag.
-- Releases are tagged (`v1`, `v2`, ...). Providers test against a tag; consumers stub from a tag.
+- Providers test against a tag; consumers stub from a tag.
+
+## Versioning rule
+| Change | Version bump | Examples |
+|---|---|---|
+| Breaking for any existing consumer | **MAJOR** (`v1` → `v2`) | remove or rename a field, make a request field required, narrow an enum, change a status code |
+| Backward-compatible addition | **MINOR** (`v1` → `v1.1`) | new examples, new optional fields, new endpoints |
+
+- Tags are **annotated**, with a one-line message describing the change, e.g.
+  `git tag -a v1.1 -m "v1.1: add 400/401 examples for well-registry"`.
+- Published tags are never moved or deleted.
 
 License: MIT.

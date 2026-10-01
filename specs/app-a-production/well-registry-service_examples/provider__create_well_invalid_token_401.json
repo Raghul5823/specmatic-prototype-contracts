@@ -1,0 +1,8 @@
+{
+  "http-request": {
+    "method": "POST", "path": "/wells",
+    "headers": { "Authorization": "Bearer wrong-token", "Content-Type": "application/json" },
+    "body": { "name": "Eagle-10", "field": "Eagle Ford", "status": "ACTIVE", "latitude": 28.8, "longitude": -98.0, "spudDate": "2024-06-01", "dailyCapacityBbl": 500 }
+  },
+  "http-response": { "status": 401, "headers": { "Content-Type": "application/problem+json" }, "body": { "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2", "title": "Unauthorized", "status": 401, "detail": "Missing or invalid bearer token." } }
+}

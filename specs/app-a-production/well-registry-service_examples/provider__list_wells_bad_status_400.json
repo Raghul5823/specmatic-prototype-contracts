@@ -1,0 +1,8 @@
+{
+  "http-request": { "method": "GET", "path": "/wells", "query": { "status": "PUMPING" } },
+  "http-response": {
+    "status": 400,
+    "headers": { "Content-Type": "application/problem+json" },
+    "body": { "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1", "title": "One or more validation errors occurred.", "status": 400, "errors": { "status": [ "status must be one of ACTIVE, SHUT_IN, ABANDONED." ] } }
+  }
+}

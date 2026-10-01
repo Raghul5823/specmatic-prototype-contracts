@@ -1,0 +1,8 @@
+{
+  "http-request": { "method": "GET", "path": "/wells/W-001", "headers": { "Authorization": "" } },
+  "http-response": {
+    "status": 401,
+    "headers": { "Content-Type": "application/problem+json" },
+    "body": { "type": "https://tools.ietf.org/html/rfc9110#section-15.5.2", "title": "Unauthorized", "status": 401, "detail": "Missing or invalid bearer token." }
+  }
+}

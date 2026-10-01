@@ -1,0 +1,8 @@
+{
+  "http-request": { "method": "POST", "path": "/wells", "headers": { "Content-Type": "application/json" }, "body": { "field": "Eagle Ford", "status": "ACTIVE", "latitude": 28.7, "longitude": -98.1, "spudDate": "2024-05-01", "dailyCapacityBbl": 650 } },
+  "http-response": {
+    "status": 400,
+    "headers": { "Content-Type": "application/problem+json" },
+    "body": { "type": "https://tools.ietf.org/html/rfc9110#section-15.5.1", "title": "One or more validation errors occurred.", "status": 400, "errors": { "name": [ "name is required (1-100 characters)." ] } }
+  }
+}

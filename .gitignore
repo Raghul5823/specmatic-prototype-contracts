@@ -1,0 +1,2 @@
+# Specmatic writes its HTML report to build/ in the working directory; reports are not contracts.
+build/
