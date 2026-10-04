@@ -1,5 +1,5 @@
 {
-  "http-request": { "method": "GET", "path": "/wells/W-001", "headers": { "Authorization": "" } },
+  "http-request": { "method": "GET", "path": "/wells/W-001", "headers": { "Authorization": "Bearer " } },
   "http-response": {
     "status": 401,
     "headers": { "Content-Type": "application/problem+json" },

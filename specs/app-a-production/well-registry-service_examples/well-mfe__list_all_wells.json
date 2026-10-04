@@ -1,0 +1,17 @@
+{
+  "http-request": {
+    "method": "GET",
+    "path": "/wells"
+  },
+  "http-response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": [
+      { "id": "W-001", "name": "Eagle-1", "field": "Eagle Ford", "status": "ACTIVE", "latitude": 28.5, "longitude": -98.3, "spudDate": "2019-04-12", "dailyCapacityBbl": 1200 },
+      { "id": "W-002", "name": "Eagle-2", "field": "Eagle Ford", "status": "ACTIVE", "latitude": 28.6, "longitude": -98.2, "spudDate": "2020-08-01", "dailyCapacityBbl": 800 },
+      { "id": "W-003", "name": "Permian-7", "field": "Permian Basin", "status": "SHUT_IN", "latitude": 31.9, "longitude": -102.1, "spudDate": "2015-02-20", "dailyCapacityBbl": 0 }
+    ]
+  }
+}

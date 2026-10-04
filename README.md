@@ -30,8 +30,13 @@ consumers.yaml                               who relies on which endpoint/fields
 - **Inline named examples** (provider-authored): a parameter or request example and a
   response example with the **same name** form one request/response pair.
 - **External examples** in `<spec-name>_examples/`: each file name starts with the consumer
-  that relies on it, e.g. `production-forecast__get_well_W-001_active.json`. The provider
-  runs them as contract tests, and the consumer gets them as stub responses.
+  that relies on it, e.g. `production-forecast__get_well_W-001_active.json` (a service) or
+  `well-mfe__list_all_wells.json` (a micro-frontend). The provider runs them as contract
+  tests, and the consumer gets them as stub responses. Provider-owned error examples start
+  with `provider__`.
+- Auth headers in examples must keep the scheme prefix (`"Bearer …"`): an empty header passes
+  provider tests but is rejected by `examples validate` and by stubs. Use `"Bearer "` (empty
+  token) to test "no credential".
 - Validate before committing:
   ```powershell
   docker run --rm -v "${PWD}:/usr/src/app" -w /usr/src/app specmatic/specmatic:2.55.0 `

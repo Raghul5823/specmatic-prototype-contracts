@@ -59,6 +59,19 @@ interactions:
       - specs/app-a-production/production-forecast-service_examples/change-request__get_forecast_F-5001.json
       - specs/app-a-production/production-forecast-service_examples/change-request__get_forecast_F-9999_not_found.json
 
+  - id: C5
+    consumer: well-mfe            # Angular micro-frontend (browser), added in v1.2
+    provider: well-registry-service
+    scope: frontend-to-backend
+    operation: GET /wells
+    query: { status: optional }
+    triggeredBy: page load (status from the page URL)
+    responsesUsed: [200, 400]
+    fieldsUsed: [id, name, field, status, dailyCapacityBbl]
+    examples:
+      - specs/app-a-production/well-registry-service_examples/well-mfe__list_all_wells.json
+      - specs/app-a-production/well-registry-service_examples/well-mfe__list_abandoned_empty.json
+
   - id: C4
     consumer: production-forecast-service
     provider: change-request-service

@@ -1,0 +1,16 @@
+{
+  "http-request": {
+    "method": "GET",
+    "path": "/wells",
+    "query": {
+      "status": "ABANDONED"
+    }
+  },
+  "http-response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": []
+  }
+}
